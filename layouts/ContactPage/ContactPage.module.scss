@@ -1,0 +1,23 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+
+.ContactPage{
+
+
+  & .title{
+    @include titleP;
+  }
+
+  & .icon{
+    width: 3rem;
+    height: 3rem;
+    fill:$cr-azure;
+
+    &:hover{
+      fill: $cr-gray-light;
+    }
+  }
+
+}

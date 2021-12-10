@@ -1,0 +1,86 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+@mixin wrapBlock{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin fontStyle{
+  letter-spacing: .2rem;
+}
+
+
+.Container{
+  width: 100vw;
+  min-height: 100vh;
+  @include container;
+  @include fontStyle;
+  margin: auto;
+
+
+  @media (min-width: $page-width-mobile-xl) {
+    // margin: auto;
+  }
+  @media (min-width: $page-width-tab) {
+    max-width: $page-width-tab;
+  }
+  @media (min-width: $page-width) {
+    max-width: $page-width;
+  }
+
+
+  & .header{
+    @include wrapBlock;
+    padding-top: 2.5rem;
+
+  }
+
+  & .main{
+    width: 100%;
+    margin: auto;
+    color: $cr-gray-light;
+
+  }
+
+
+  & .footer{
+    @include wrapBlock;
+    padding-bottom: 2.5rem;
+
+  }
+
+
+  & .hBlock{
+    @include block;
+    align-items: center;
+  }
+
+  & .title{
+    font-size: 4rem;
+    color: $cr-white;
+  }
+
+  & .turnLeft{
+    transform: translateY(-50%) rotate(-90deg) translateX(-100%);
+    transform-origin: top left;
+  }
+
+  & .turnRight{
+    transform: translateY(-50%) rotate(90deg) translateX(100%);
+    transform-origin: top right;
+  }
+
+  & .navButton{
+    @include fontStyle;
+    text-transform: uppercase;
+    color: $cr-black-light-two;
+    font-weight: 600;
+
+
+    &:hover{
+      color:$cr-azure;
+    }
+  }
+}

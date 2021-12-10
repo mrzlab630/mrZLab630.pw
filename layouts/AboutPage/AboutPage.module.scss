@@ -1,0 +1,26 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+.AboutPage{
+
+
+
+  & .title{
+    @include titleP;
+  }
+
+  & .content{
+    @include container;
+    padding: 1rem;
+
+    & ul{
+
+      & li{
+        list-style-type: "🔸";
+      }
+    }
+  }
+
+
+}

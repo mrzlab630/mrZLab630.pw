@@ -1,0 +1,20 @@
+[
+  {
+    "image":"/static/imgs/base64converter_logo.jpg",
+    "link":"https://tinynotepad.com",
+    "title":"Create Your Note",
+    "content":"Create secure one-time self-destructing notes to send confidential information to someone you can't send it to email or messengers."
+  },
+  {
+    "image":"/static/imgs/tinyNotepad_logo.jpg",
+    "link":"https://base64converter.com",
+    "title":"Base 64 Converter",
+    "content":"This is a convienent online tool that allows you to convert to and from base64 data. You can encode and decode text, images, spreadsheets, documents - you name it."
+  },
+  {
+    "image":"/static/imgs/whatsmyinfo_logo.jpg",
+    "link":"https://whatsmyinfo.com",
+    "title":"Whats My Info",
+    "content":"The easiest way to find your IP address, browser information, etc."
+  }
+]

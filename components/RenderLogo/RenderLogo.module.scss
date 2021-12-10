@@ -1,0 +1,27 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.RenderLogo{
+  position: relative;
+  cursor: default;
+
+
+  & .title{
+    text-decoration: underline;
+    text-transform: none;
+  }
+
+  & .subText{
+    color: $cr-gray;
+    position: absolute;
+    top:65%;
+    right: .3rem;
+    & span{
+      letter-spacing: -.1rem;
+      font-size: 1.252rem;
+      &:nth-child(2){
+        text-transform: uppercase;
+      }
+    }
+  }
+}

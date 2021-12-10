@@ -1,0 +1,54 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.ToolsPage{
+  @include container;
+
+  & .title{
+    @include subText;
+    color: $cr-gray;
+    & span{
+
+      &:nth-child(1){
+        font-size: 1.252rem;
+      }
+      &:nth-child(2){
+        text-transform: uppercase;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  & .list{
+
+  }
+
+  & .listBlock{
+    @include block;
+    padding: 1rem;
+
+    &:hover{
+      background-color: $cr-dark-blue;
+    }
+
+    & .image{
+      border: 1px solid $cr-gray;
+      border-radius: 3px;
+      margin: auto;
+
+      & img{
+        width: 18rem;
+        height: auto;
+        margin: auto;
+        display: block;
+      }
+
+    }
+
+    & .data{
+      width: 70%;
+      padding-left: 1.8rem;
+
+    }
+  }
+}
