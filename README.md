@@ -31,7 +31,7 @@
 
 ## Start
 
-create .env from .env.demo
+create **.env** from **.env.demo**
 
 `$ yarn install`
 
