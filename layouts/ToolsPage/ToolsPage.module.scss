@@ -3,6 +3,7 @@
 
 .ToolsPage{
   @include container;
+  padding: .8rem;
 
   & .title{
     @include subText;
@@ -25,6 +26,9 @@
 
   & .listBlock{
     @include block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
 
     &:hover{
@@ -37,7 +41,7 @@
       margin: auto;
 
       & img{
-        width: 18rem;
+        width: 15rem;
         height: auto;
         margin: auto;
         display: block;
@@ -46,8 +50,23 @@
     }
 
     & .data{
-      width: 70%;
+      width: 100%;
       padding-left: 1.8rem;
+
+      @media (min-width: $page-width-mobile-xl) {
+        width: 50%;
+      }
+      @media (min-width: $page-width-tab) {
+        width: 70%;
+      }
+
+      & h3{
+        font-size: 1rem;
+
+        @media (min-width: $page-width-mobile-m) {
+          font-size: 1.17em;
+        }
+      }
 
     }
   }
