@@ -16,5 +16,11 @@
     "link":"https://whatsmyinfo.com",
     "title":"Whats My Info",
     "content":"The easiest way to find your IP address, browser information, etc."
+  },
+  {
+    "image":"/static/imgs/mintyoursolananft_logo.jpg",
+    "link":"https://mintyoursolananft.com",
+    "title":"Mint Your Solana NFT",
+    "content":"This web tool will allow you to mine Solana NFT tokens in a few clicks"
   }
 ]
