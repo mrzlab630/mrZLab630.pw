@@ -1,0 +1,20 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+$height: .65em;
+
+
+
+.Rating{
+
+  width: 100%;
+  height: $height;
+  background-color: $cr-black-light-two;
+
+
+  & .progress{
+    width: 1%;
+    height: $height;
+    background-color: $cr-azure;
+  }
+}

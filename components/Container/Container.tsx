@@ -122,7 +122,7 @@ const Container: FC<IContainer> = ({
                         renderNavBtn('left')
                     }
                 </div>
-                <div>
+                <div className={classes.turnCenter}>
                     <PageMotionWrap
                         duration={1.8}
                         {...{toggle,animation}}

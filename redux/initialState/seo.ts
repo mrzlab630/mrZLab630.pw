@@ -63,6 +63,12 @@ export const initialStateSEO:IinitialStateSEO = {
         },
         {
             ...baseParams,
+            page: 'cv',
+            title: `my Resume`,
+            description: `mrZLab630.pw -- Resume`,
+        },
+        {
+            ...baseParams,
             page: 'tools',
             title: `web tools`,
             description: `tools for webmasters and web administrators`,

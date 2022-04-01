@@ -65,11 +65,21 @@
   & .turnLeft{
     transform: translateY(-50%) rotate(-90deg) translateX(-100%);
     transform-origin: top left;
+    width: 10%;
+  }
+
+  & .turnCenter{
+    width: 100%;
+
+    @media (min-width: $page-width-mobile-xl) {
+      width: 80%;
+    }
   }
 
   & .turnRight{
     transform: translateY(-50%) rotate(90deg) translateX(100%);
     transform-origin: top right;
+    width: 10%;
   }
 
   & .navButton{

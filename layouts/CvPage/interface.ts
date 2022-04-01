@@ -2,13 +2,12 @@
  *
  * by mrZ
  * Email: mrZ@mrZLab630.pw
- * Date: 2021-12-08
- * Time: 15:17
+ * Date: 2022-03-29
+ * Time: 10:29
  * About:
  *
  */
 
-export interface IAboutPage {
-    cv?:string,
+export interface ICvPage{
     error?:string
 }

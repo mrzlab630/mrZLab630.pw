@@ -10,4 +10,4 @@
 
 
 
-export type pageType = 'root'|'contact'|'error'|'tools'|'about'
+export type pageType = 'root'|'contact'|'error'|'tools'|'about'|'cv'

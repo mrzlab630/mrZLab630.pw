@@ -25,11 +25,14 @@
   }
 
   & .listBlock{
-    @include block;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+
+    @media (min-width: $page-width-tab) {
+      @include block;
+    }
 
     &:hover{
       background-color: $cr-dark-blue;
@@ -51,13 +54,14 @@
 
     & .data{
       width: 100%;
-      padding-left: 1.8rem;
+
 
       @media (min-width: $page-width-mobile-xl) {
         width: 50%;
       }
       @media (min-width: $page-width-tab) {
         width: 70%;
+        padding-left: 1.8rem;
       }
 
       & h3{
