@@ -114,7 +114,7 @@ body {
   @include title;
 }
 
-.link{
+.link, a{
   text-decoration: none;
   color: $cr-gray-light-two;
   font-weight: 500;
