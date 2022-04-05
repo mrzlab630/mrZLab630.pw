@@ -24,7 +24,7 @@ const About: NextPage<IAboutPage> = ({cv,error}) => {
 
     const [user, setUser] = useState({
         showContactForm:true,
-        name:'Zadolya Stepan',
+        name:'zadolia stepan',
         pic:'/static/imgs/user_pic.png',
         position:'web developer',
         contact:{

@@ -56,7 +56,7 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
     const [navigation, setNavigation] = useState<IContainerNavigation>({
         down:'tools',
         downRight:'contacts',
-        upRight:'logo'
+       // upRight:'logo'
     })
 
     const [usrName, setUserName] = useState<string| undefined>(undefined)
