@@ -7,8 +7,9 @@
  * About:
  *
  */
+import {IUser} from "../layouts/CvPage/interface";
 
 export interface IAboutPage {
-    cv?:string,
+    user?:IUser,
     error?:string
 }
