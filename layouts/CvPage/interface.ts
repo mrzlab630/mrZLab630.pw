@@ -75,5 +75,5 @@ export interface IUser{
 
 export interface ICvPage{
     error?:string,
-    user:IUser
+    user?:IUser
 }
