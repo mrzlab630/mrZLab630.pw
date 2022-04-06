@@ -52,6 +52,9 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
     const [showAlert,setShowAlert] = useState<boolean>(false)
     const [alertType,setAlertType] = useState<TINotificationType>('success')
     const [alertMessage,setAlertMessage] = useState<string|undefined>(undefined)
+
+    const [fatalError,setFatalError] = useState<string|undefined>(undefined)
+
     const [navigation, setNavigation] = useState<IContainerNavigation>({
         down:'tools',
         downRight:'contacts',
@@ -81,6 +84,9 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
 
 
     useEffect(() =>{
+
+        setFatalError(!user ? 'error loading data' : undefined)
+
         if(!user){
             return
         }
@@ -144,11 +150,6 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
             title,
             about
         } = usrPortfolio[v]
-
-        console.log(usrPortfolio[v])
-
-
-
 
         const renderDialog = <div className={classes.dialogPortfolio}>
 
@@ -468,7 +469,7 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
         >
             <div className={classes.CvPage}>
                 {
-                    isLoading ? <ProgressBar />  : renderPage
+                    isLoading ? <ProgressBar />  :  fatalError || renderPage
                 }
             </div>
         </Container>

@@ -36,9 +36,7 @@ const ZadoliaStepanPage: NextPage<IZadoliaStepanPage> = ({user,error}) => {
                 image:seo?.image
             }}
         />
-        {
-            user ? <CvPage {...{error,user}}/> : <>{error}</>
-        }
+            <CvPage {...{error,user}}/>
     </>
 }
 
