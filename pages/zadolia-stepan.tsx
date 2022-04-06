@@ -7,7 +7,7 @@
  * About:
  *
  */
-import {IAboutPage} from '../interfaceAndType/IAboutPage'
+import {IZadoliaStepanPage} from '../interfaceAndType/IZadoliaStepanPage'
 import {GetServerSideProps, NextPage} from "next"
 import {useAppSelector} from "../redux/hooks"
 import {RootState} from "../redux/store"
@@ -17,7 +17,7 @@ import SEOHead from "../components/SEOHead"
 import CvPage from "../layouts/CvPage"
 
 
-const About: NextPage<IAboutPage> = ({user,error}) => {
+const ZadoliaStepanPage: NextPage<IZadoliaStepanPage> = ({user,error}) => {
 
     const header = useAppSelector((state:RootState) => state.seo.header)
     const seo = header.filter(itm => itm.page === 'cv').pop()
@@ -36,13 +36,11 @@ const About: NextPage<IAboutPage> = ({user,error}) => {
                 image:seo?.image
             }}
         />
-        {
-            user ? <CvPage {...{error,user}}/> : <>err</>
-        }
+        <CvPage {...{error,user}}/>
     </>
 }
 
-export default About
+export default ZadoliaStepanPage
 
 
 export const getServerSideProps:GetServerSideProps = async (context) => {
