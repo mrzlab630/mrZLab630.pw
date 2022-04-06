@@ -44,6 +44,7 @@ export interface IExperience{
 
 export interface IPortfolio{
     images?:string[],
+    git?:string,
     url?:string,
     date:string,
     title:string,

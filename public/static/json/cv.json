@@ -33,32 +33,126 @@
     },
     "about": {
       "lable": "about me",
-      "value": "<p>\uD83D\uDC4B hey!</p><p>I'm a Full-Stack developer with 15 years of experience.</p><p>My web development journey started as a hobby when I was in high school, and my first accomplishment was learning PHP, jquery, CSS, HTML.</p><p>This allowed me to offer business services to create websites and online stores.</p><p>Then I switched to JavaScript, Node.js, React.js, Python, and the creation of microservices, messenger bots, and blockchain apps via web3.js</p><p>I also started my first company, and it was an online store.</p><p>After a while I successfully sold it.</p><p>And now I am a Full-Stack Developer / Startuper / Freelancer</p><p>With 15+ years of experience in the IT business.</p><p>\uD83D\uDC49 So what can I do for you?</p><p>✔️ I can turn your business idea into a web service.</p><p>So just bring me what you got. \uD83D\uDE42</p>"
+      "value": "<p>\uD83D\uDC4B hey!</p><p>I'm a Full-Stack developer with 20 years of experience.</p><p>My web development journey started as a hobby when I was in high school, and my first accomplishment was learning PHP, jquery, CSS, HTML.</p><p>This allowed me to offer business services to create websites and online stores.</p><p>Then I switched to JavaScript, Node.js, React.js, Python, and the creation of microservices, messenger bots, and blockchain apps via web3.js</p><p>I also started my first company, and it was an online store.</p><p>After a while I successfully sold it.</p><p>And now I am a Full-Stack Developer / Startuper / Freelancer</p><p>With 20+ years of experience in the IT business.</p><p>\uD83D\uDC49 So what can I do for you?</p><p>✔️ I can turn your business idea into a web service.</p><p>So just bring me what you got. \uD83D\uDE42</p>"
     },
     "skills": [
       {
         "lable": "skills",
         "value": [
           {
+            "lable": "Front-end dev",
+            "level": 95
+          },
+          {
+            "lable": "Back-end dev",
+            "level": 93
+          },
+
+          {
             "lable": "JavaScript",
-            "level": 98
+            "level": 97
           },
           {
             "lable": "TypeScript",
-            "level": 88
+            "level": 95
+          },
+          {
+            "lable": "Node.js",
+            "level": 93
+          },
+          {
+            "lable": "Webpack",
+            "level": 93
+          },
+          {
+            "lable": "Express.js",
+            "level": 93
+          },
+          {
+            "lable": "Next.js",
+            "level": 94
+          },
+          {
+            "lable": "React.js",
+            "level": 95
           },
           {
             "lable": "Pyton",
             "level": 69
           },
           {
+            "lable": "Python Flask",
+            "level": 69
+          },
+          {
             "lable": "php",
-            "level": 58
+            "level": 75
           },
           {
             "lable": "web3",
-            "level": 72
+            "level": 80
+          },
+          {
+            "lable": "Graphql",
+            "level": 95
+          },
+          {
+            "lable": "Rest API",
+            "level": 96
+          },
+          {
+            "lable": "PostgreSQL",
+            "level": 96
+          },
+          {
+            "lable": "MongoDB",
+            "level": 90
+          },
+          {
+            "lable": "MySQL",
+            "level": 90
+          },
+          {
+            "lable": "SASS",
+            "level": 95
+          },
+          {
+            "lable": "Bootstrap",
+            "level": 95
+          },
+          {
+            "lable": "Tailwindcss",
+            "level": 95
+          },
+          {
+            "lable": "Docker",
+            "level": 95
+          },
+          {
+            "lable": "Git",
+            "level": 96
+          },
+          {
+            "lable": "Nginx",
+            "level": 95
+          },
+          {
+            "lable": "Apache2",
+            "level": 80
+          },
+          {
+            "lable": "Yarn",
+            "level": 95
+          },
+          {
+            "lable": "npm",
+            "level": 95
+          },
+          {
+            "lable": "Jira",
+            "level": 93
           }
+
         ]
       },
       {
@@ -99,7 +193,7 @@
         {
           "title": "Full-stack Developer",
           "subTitle": "Freelance",
-          "date": "2010 - 2012",
+          "date": "2002 - 2012",
           "value": "<p>web service development</p>"
         }
       ]
@@ -107,48 +201,93 @@
     "portfolio": [
       {
         "images": [
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380"
+          "/static/imgs/funfair_ventures.png"
         ],
+        "url": "https://funfair.ventures",
+        "date": "2022",
+        "title": "FunFair Ventures",
+        "about": "website for crypto venture capital business."
+      },
+      {
+        "images": [
+          "https://MintYourSolanaNFT.com/static/imgs/logo.jpg"
+        ],
+        "git": "https://github.com/mrzlab630/MintYourSolanaNFT",
         "url": "https://mintyoursolananft.com",
         "date": "2022",
         "title": "mint Solana NFT tokens",
-        "about": "This web tool will allow you to mint Solana NFT tokens in a few clicks."
+        "about": "This web tool will allow you to mine Solana NFT tokens in a few clicks."
       },
       {
         "images": [
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380"
+          "https://whatsmyinfo.com/static/imgs/logo.jpg"
         ],
-        "url": "http://localhost:3004/zadolya-stepan",
+        "git": "https://github.com/mrzlab630/whatsmyinfo",
+        "url": "https://whatsmyinfo.com",
+        "date": "2022",
+        "title": "Whats My Info",
+        "about": "The Easiest Way To Find Your IP Address, Browser Information, etc."
+      },
+      {
+        "images": [
+          "https://base64converter.com/static/imgs/logo.jpg"
+        ],
+        "git": "https://github.com/mrzlab630/base64converter",
+        "url": "https://base64converter.com/",
+        "date": "2022",
+        "title": "base64converter",
+        "about": "web app for encoding any data in base64 and base64 decoding"
+      },
+      {
+        "images": [
+          "https://tinynotepad.com/static/imgs/tinyNotepad_logo.jpg"
+        ],
+        "url": "https://tinynotepad.com",
         "date": "2021",
-        "title": "Pellentesque posuere",
-        "about": "vulputate eget, arcu."
+        "title": "online notepad",
+        "about": "Create Secure One-Time Self-Destructing Notes To Send Confidential Information To Someone You Can't Send It To Email Or Messengers."
       },
       {
         "images": [
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380"
+          "https://lh3.googleusercontent.com/AxT_YNNb6OIgskcLzz11NrN23TRFopKLVK6sxPTZsZLI_ArmvpmWuSf-lZNBJaLYpgdVK8eogKeDAJCz03ghY2OYOg=w640-h400-e365-rj-sc0x00ffffff"
         ],
-        "url": "http://localhost:3004/zadolya-stepan",
-        "date": "2022",
-        "title": "Etiam imperdiet imperdiet",
-        "about": "Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus."
+        "url": "https://translateitnow.online",
+        "date": "2021",
+        "title": "translate it now!",
+        "about": "This chrome extension will help you quickly translate any text"
       },
       {
         "images": [
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380",
-          "https://img.freepik.com/free-vector/modern-simple-template-for-curriculum_1435-1423.jpg?w=1380"
+          "https://raw.githubusercontent.com/mrzlab630/chrome-extension-YoK/main/docs/imgs/preview.png"
         ],
-        "url": "http://localhost:3004/zadolya-stepan",
-        "date": "2022",
-        "title": "Aenean massa",
-        "about": "Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor."
+        "git": "https://github.com/mrzlab630/chrome-extension-YoK",
+        "url": "https://chrome.google.com/webstore/detail/yok-%3E-%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8-online/lbjbjjbpoklpnfojihndajaihedjciee?hl=ru&authuser=0",
+        "date": "2021",
+        "title": "chrome extension for kinopoisk.ru",
+        "about": "This chrome extension will find all links to the film on kinopoisk.ru. Just go to the movie page"
+      },
+
+
+      {
+        "images": [
+          "https://raw.githubusercontent.com/mrzlab630/what-time-is-it-reactjs-front/master/src/assets/imgs/preview.png"
+        ],
+        "git": "https://github.com/mrzlab630/what-time-is-it-reactjs-front",
+        "date": "2019",
+        "title": "what time is it?",
+        "about": "It's a smart web clock. they can determine: ip adress,country,time zone,time,date,year"
+      },
+      {
+        "images": [
+          "https://raw.githubusercontent.com/mrzlab630/what-time-is-it-reactjs-front/master/src/assets/imgs/preview.png"
+        ],
+        "git": "https://github.com/mrzlab630/TikTok-Anti-puzzle-captcha",
+        "date": "2019",
+        "title": "TikTok Anti puzzle captcha",
+        "about": "an example of a machine solution to a puzzle captcha"
       }
+
+
     ]
   }
 }

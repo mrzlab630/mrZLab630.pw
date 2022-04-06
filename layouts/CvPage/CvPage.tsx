@@ -7,7 +7,7 @@
  * About:
  *
  */
-import {FC, useEffect, useState} from "react"
+import {FC, ReactNode, useEffect, useState} from "react"
 import {
     ICvPage,
     IDefaultParams,
@@ -27,8 +27,6 @@ import {IContainerNavigation, TContainerPage} from "../../components/Container/i
 import Router from "next/router";
 import Rating from "../../components/Rating/Rating"
 import Carousel from "../../components/Carousel/Carousel"
-import {ICarouselItm} from "../../components/Carousel/interface"
-
 import TelegramIco from '../../assets/svg/paper-plane.svg'
 import GlobusIcon from '../../assets/svg/globus.svg'
 import PinIcon from '../../assets/svg/pin.svg'
@@ -39,6 +37,7 @@ import GithubSvg from "../../assets/svg/github.svg"
 import UpworkSvg from "../../assets/svg/upwork.svg"
 import LinkedinSvg from "../../assets/svg/linkedin.svg"
 import DefaultLinkSvg from "../../assets/svg/logo_Z.svg"
+import Dialog from "../../components/Dialog";
 
 
 
@@ -58,6 +57,10 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
         downRight:'contacts',
        // upRight:'logo'
     })
+
+    const [dialogData, settDialogData] = useState<ReactNode|undefined>(undefined)
+    const [dialogTogl,setDialogTogl] = useState<boolean>(false)
+
 
     const [usrName, setUserName] = useState<string| undefined>(undefined)
     const [usrPic, setUserPic] = useState<string>('/static/imgs/user_pic.png')
@@ -128,9 +131,63 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
     const handleClickLinkOut = (link:string) => () =>   Router.push(link)
 
     const handleClickPortfolio = (v:number) =>{
-        console.log({v})
+
+        if(!usrPortfolio || !usrPortfolio[v]){
+            return
+        }
+
+        const {
+            images,
+            git,
+            url,
+            date,
+            title,
+            about
+        } = usrPortfolio[v]
+
+        console.log(usrPortfolio[v])
+
+
+
+
+        const renderDialog = <div className={classes.dialogPortfolio}>
+
+            <div className={classes.dialogPortfolioImg}>
+                {
+                    images && Array.isArray(images) ? <img src={images[0]} /> : undefined
+                }
+            </div>
+
+            <div className={classes.dialogPortfolioInfo}>
+
+                <div  className={classes.dialogPortfolioTitle}>
+                    <div  className={classes.dialogPortfolioTitleTitle}>
+                        <h2>{title}</h2>
+                        <h5 className={classes.dialogPortfolioTitleLinks}>
+                            {
+                                git && <a href={git} target={'_blank'}>git</a>
+                            }
+                            {
+                                url && <a href={url} target={'_blank'}>web</a>
+                            }
+                        </h5>
+                    </div>
+                    <div className={classes.dialogPortfolioDate}><span>{date}</span></div>
+                </div>
+
+                <div className={classes.dialogPortfolioAbout}>
+                    <p dangerouslySetInnerHTML={{__html:  about ?? ''}} />
+                </div>
+
+            </div>
+
+        </div>
+
+        settDialogData(renderDialog)
+        setDialogTogl(true)
     }
 
+    const handleClickDialogOff = () => setDialogTogl(false)
 
     const renderUsrPic = <div className={classes.usrContactDataItem}>
                             <div className={classes.iconsWrap}></div>
@@ -189,7 +246,9 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
         }
 
 
-        return <li key={`renderMediaLinks-${idx}`}>
+        return <li
+            key={`renderMediaLinks-${idx}`}
+        >
             <a href={itm} target={'_parent'}>
                 <Icon className={classes.usrContactSSIcon}/>
             </a>
@@ -226,8 +285,8 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
             <div className={classes.titleSklRtng}>{itmV.lable}</div><Rating value={itmV.level}/>
         </div>)
 
-        return <><div
-            key={`renderSkills-${idx}`}
+        return <div  key={`renderSkills-${idx}`}>
+            <div
             className={classes.usrSkillsItm}>
             <h2>{lable}</h2>
             {
@@ -235,7 +294,7 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
             }
         </div>
             <div className={classes.separator} />
-        </>
+        </div>
 
 
     }) : undefined
@@ -270,10 +329,6 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
         </div>
 
     }) : undefined
-
-
-
-
 
     const renderPage = <div className={classes.wrap}><div className={classes.cv}>
 
@@ -390,6 +445,7 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
 
 
     return <>
+
         <Notification
             position={'top-right'}
             type={alertType}
@@ -397,6 +453,14 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
             message={alertMessage}
         />
 
+        <Dialog
+            open={dialogTogl}
+            isClickOut={handleClickDialogOff}
+        >
+            {
+                dialogData
+            }
+        </Dialog>
 
         <Container
             {...{navigation}}
@@ -408,6 +472,7 @@ const CvPage: FC<ICvPage> = ({error,user}) => {
                 }
             </div>
         </Container>
+
 
     </>
 }

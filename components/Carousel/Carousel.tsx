@@ -53,7 +53,7 @@ const Carousel: FC<ICarousel> = ({itms, onClick}) => {
             onClick={handleClickItm}
         >
             <h3>{title}</h3>
-            <p>{about}</p>
+            <p dangerouslySetInnerHTML={{__html: about ?? ''}} />
         </div>
 
 

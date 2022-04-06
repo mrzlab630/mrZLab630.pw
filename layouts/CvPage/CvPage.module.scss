@@ -24,7 +24,87 @@
   background-color: $cr-azure;
 }
 
+.dialogPortfolio{
+  @include col;
+  width: 90%;
+  max-height: 30em;
+  margin: auto;
 
+  @media (min-width: $page-width-mobile-xl) {
+    @include row;
+  }
+
+
+  & .dialogPortfolioImg{
+    width: auto;
+    margin: auto;
+
+    @media (min-width: $page-width-mobile-xl) {
+      width: 40%;
+    }
+
+    @media (min-width: $page-width-tab) {
+      width: 25%;
+    }
+
+    & img{
+      width: 10em;
+      height: auto;
+    }
+
+  }
+
+  & .dialogPortfolioInfo{
+    @include col;
+
+    & .dialogPortfolioTitle{
+      @include row;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+
+
+      & .dialogPortfolioTitleTitle{
+
+      }
+
+      & h2{
+        @include title;
+        margin-bottom: 0;
+      }
+      & h5{
+        margin-top: 0;
+        @include title;
+      }
+
+      & .dialogPortfolioTitleLinks{
+
+        & a{
+          color: $cr-azure;
+          padding-right: 1em;
+          text-transform: uppercase;
+        }
+
+
+      }
+
+
+      & .dialogPortfolioDate{
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+    }
+
+    & .dialogPortfolioAbout{
+
+    }
+
+
+  }
+
+
+}
 
 .CvPage{
   width: 100%;
@@ -254,12 +334,9 @@
                 @include text;
               }
 
-
             }
 
           }
-
-
 
         }
 
@@ -269,19 +346,26 @@
           width: 85%;
           margin: 2em 0;
           position: relative;
-          top: 33em;
+          top: 88em;
 
           @media (min-width: $page-width-mobile) {
-            top: 30em;
+            top: 82em;
           }
           @media (min-width: $page-width-mobile-m) {
-            top: 25em;
+            top: 73em;
           }
 
+          @media (min-width: $page-width-mobile-mp) {
+            top: 67em;
+          }
 
           @media (min-width: $page-width-mobile-xl) {
-            top: 20em;
+            top: 58em;
           }
+          @media (min-width: $page-width-mobile-xxl) {
+            top: 48em;
+          }
+
 
           @media (min-width: $page-width-tab) {
             top: 0;
@@ -310,18 +394,20 @@
           justify-content: center;
           padding-top: 3em;
           position: relative;
-          bottom: 113em;
+          bottom: 160em;
 
           @media (min-width: $page-width-mobile) {
-            bottom: 110em;
+            bottom: 158em;
           }
           @media (min-width: $page-width-mobile-m) {
-            bottom: 107em;
+            bottom: 155em;
+          }
+          @media (min-width: $page-width-mobile-m) {
+            bottom: 153em;
           }
 
-
           @media (min-width: $page-width-mobile-xl) {
-            bottom: 83em;
+            bottom: 132em;
           }
 
           @media (min-width: $page-width-tab) {
@@ -376,18 +462,19 @@
           & .myWayAboutMe{
 
             position: relative;
-            bottom: 73em;
-
+            bottom: 122em;
 
 
             @media (min-width: $page-width-mobile-m) {
-              bottom: 70em;
+              bottom: 118em;
+            }
+            @media (min-width: $page-width-mobile-mx) {
+              bottom: 115em;
             }
 
             @media (min-width: $page-width-mobile-xl) {
-              bottom: 67.5em;
+              bottom: 113.5em;
             }
-
 
             @media (min-width: $page-width-tab) {
               bottom:0;

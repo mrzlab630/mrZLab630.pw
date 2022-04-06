@@ -20,11 +20,14 @@ $cr-info:rgba(8, 148, 248, 1);
 
 
 /** width **/
-$page-width:1200px;
-$page-width-tab: 968px;
 $page-width-mobile-nano: 280px;
 $page-width-mobile: 320px;
 $page-width-mobile-m: 375px;
+$page-width-mobile-mp: 393px;
+$page-width-mobile-mx: 414px;
 $page-width-mobile-xl: 540px;
+$page-width-mobile-xxl: 768px;
+$page-width-tab: 968px;
+$page-width:1200px;
 
 $page-width-footer-header:$page-width + 150px;
