@@ -10,6 +10,6 @@
 import {IUser} from "../layouts/CvPage/interface";
 
 export interface IAboutPage {
-    user?:IUser,
+    aboutMe?:string,
     error?:string
 }

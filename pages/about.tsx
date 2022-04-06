@@ -36,7 +36,10 @@ const About: NextPage<IAboutPage> = ({aboutMe,error}) => {
                 image:seo?.image
             }}
         />
-        <AboutPage {...{aboutMe,error}}/>
+        {
+            aboutMe ? <AboutPage {...{aboutMe,error}}/> : <>err</>
+        }
+
     </>
 }
 
