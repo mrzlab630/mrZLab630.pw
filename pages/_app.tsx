@@ -7,6 +7,7 @@
  * About:
  *
  */
+
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
